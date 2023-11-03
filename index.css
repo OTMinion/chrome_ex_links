@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 10px;
+  padding-top: 50px; /* Adjust this value to ensure the main content starts below the button container */
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 400px;
+}
+
+button {
+  background: #5f9341;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 15px; /* Makes the button rounder */
+  transition: background-color 0.3s; /* Transition effect for smooth color change */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#button-container {
+  position: fixed;
+  top: 10px; /* 10px from the top of the viewport */
+  left: 10px; /* 10px from the left of the viewport */
+  background-color: white; /* Just to ensure the background isn't transparent */
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  z-index: 1000; /* Ensures the buttons stay on top of other content */
+}
+
+button:hover {
+  background-color: #4f8131; /* Slightly darker shade for hover effect */
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: #5f9341;
+  display: inline-block;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative; /* Add relative positioning for the parent element */
+}
+
+.delete-btn {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
