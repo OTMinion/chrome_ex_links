@@ -52,9 +52,7 @@ function modifyUrl(url) {
   // Handling animesuge pattern
   if (url.startsWith("animesuge.ru/anime/")) {
     url = url.replace("animesuge.ru/anime/", "");
-  }
-
-  if (url.startsWith("https://vvw.dramacool.sr/video-watch/")) {
+  } else if (url.startsWith("https://vvw.dramacool.sr/video-watch/")) {
     url = url.replace("https://vvw.dramacool.sr/video-watch/", "");
   }
 
