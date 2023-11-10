@@ -52,8 +52,9 @@ function modifyUrl(url) {
   // Handling animesuge pattern
   if (url.startsWith("animesuge.ru/anime/")) {
     url = url.replace("animesuge.ru/anime/", "");
-  } else if (url.startsWith("https://vvw.dramacool.sr/video-watch/")) {
-    url = url.replace("https://vvw.dramacool.sr/video-watch/", "");
+  } else if (url.startsWith("vvw.dramacool.sr/video-watch/")) {
+    // Modified line
+    url = url.replace("vvw.dramacool.sr/video-watch/", "");
   }
 
   // Removing everything after "full" or "free"
