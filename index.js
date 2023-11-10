@@ -54,11 +54,17 @@ function modifyUrl(url) {
     url = url.replace("animesuge.ru/anime/", "");
   }
 
+  if (url.startsWith("https://vvw.dramacool.sr/video-watch/")) {
+    url = url.replace("https://vvw.dramacool.sr/video-watch/", "");
+  }
+
   // Removing everything after "full" or "free"
   if (url.includes("-full")) {
     url = url.split("-full")[0];
   } else if (url.includes("-free")) {
     url = url.split("-free")[0];
+  } else if (url.includes("-20")) {
+    url = url.split("-20")[0];
   }
 
   return url;
